@@ -5,7 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rebeca Lima | Desenvolvedora</title>
   <meta name="description" content="Desenvolvedora de software especializada em integrações de API e automação.">
+  <meta name="keywords" content="Desenvolvedora, API, Automação, Portfólio, Rebeca Lima">
+  <meta name="author" content="Rebeca Lima">
+  <meta property="og:title" content="Rebeca Lima | Desenvolvedora">
+  <meta property="og:description" content="Portfólio de Rebeca Lima, desenvolvedora especializada em integrações de API e automação.">
+  <meta property="og:image" content="images/foto1.jpeg">
+  <meta property="og:url" content="https://rebecaliima.github.io">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <style>
     :root {
       --primary: #F2AE2E;
@@ -104,6 +112,11 @@
       font-weight: 700;
       transition: background-color var(--transition);
     }
+    .skill-block:hover {
+      transform: scale(1.1);
+      background-color: var(--primary);
+      color: var(--background);
+    }
     .api-list {
       display: flex;
       flex-wrap: wrap;
@@ -116,23 +129,6 @@
       padding: 0.75rem 1rem;
       font-weight: 700;
       transition: background-color var(--transition);
-    }
-    .project-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 2rem;
-      justify-content: center;
-    }
-    .project-card {
-      background: var(--card-bg);
-      padding: 1.5rem;
-      border-radius: 10px;
-      width: 300px;
-      text-align: left;
-    }
-    .project-card h3 {
-      color: var(--primary);
-      margin-top: 0;
     }
     footer {
       text-align: center;
@@ -234,23 +230,22 @@
     <span><strong>Rebeca Lima</strong></span>
     <div class="nav-links">
       <a href="#about">Sobre</a>
-      <a href="#projects">Projetos</a>
       <a href="#contact">Contato</a>
     </div>
   </nav>
   <section class="hero">
-    <img src="images/foto1.jpeg" alt="Rebeca Lima">
+    <img src="images/foto1.jpeg" alt="Foto de perfil de Rebeca Lima">
     <h1>Olá, sou a Rebeca!</h1>
     <p>Desenvolvedora apaixonada por criar soluções digitais eficientes e inovadoras.</p>
-    <a href="#projects" class="button">Ver Projetos</a>
+    <a href="#contact" class="button">Entre em Contato</a>
   </section>
   <section class="section" id="about">
     <h2 style="text-align: center;">Sobre Mim</h2>
     <div class="about-skills-container">
       <div class="about-text">
         <h3>Conheça-me</h3>
-        <p>Sou uma desenvolvedora de software focada em criar soluções tecnológicas inteligentes e eficientes. Minha experiência inclui integrações de API, automação de processos e desenvolvimento web. Tenho um olhar analítico para resolver desafios e otimizar fluxos de trabalho.</p>
-        <p>Acredito que a tecnologia deve ser intuitiva e funcional, e por isso busco sempre desenvolver aplicações que agreguem valor e facilitem a vida dos usuários.</p>
+        <p>Acredito que a tecnologia deve ser intuitiva, funcional e responsável. Por isso, desenvolvo soluções para empresas que automatizam tarefas, integram sistemas e organizam processos de forma simples e eficiente. Meu foco é criar aplicações que realmente facilitam a vida das pessoas e geram valor concreto para o negócio.
+        </p>
       </div>
       <div class="skills">
         <h3>Minhas Skills</h3>
@@ -267,6 +262,11 @@
           <span class="skill-block">Java</span>
           <span class="skill-block">Express</span>
           <span class="skill-block">Git</span>
+          <span class="skill-block">Typescript</span>
+          <span class="skill-block">React</span>
+          <span class="skill-block">Vue</span>
+          <span class="skill-block">Docker</span>
+          <span class="skill-block">AWS</span>
         </div>
       </div>
     </div>
@@ -277,27 +277,14 @@
       <span class="api-block">Bling</span>
       <span class="api-block">Mercado Livre</span>
       <span class="api-block">Kommo</span>
+      <span class="api-block">ClickSend</span>
       <span class="api-block">WhatsApp API</span>
       <span class="api-block">Nota Fácil</span>
       <span class="api-block">Plugg.to</span>
+      <span class="api-block">Sienge</span>
+      <span class="api-block">Octadesk</span>
+      <span class="api-block">OpenAI</span>
       <span class="api-block">Gestão Click</span>
-    </div>
-  </section>
-  <section class="section" id="projects">
-    <h3 style="text-align: center;">Projetos</h3>
-    <div class="project-list">
-      <div class="project-card">
-        <h3>Projeto 1</h3>
-        <p>Integração de API para automação de processos empresariais.</p>
-      </div>
-      <div class="project-card">
-        <h3>Projeto 2</h3>
-        <p>Dashboard interativo para análise de dados em tempo real.</p>
-      </div>
-      <div class="project-card">
-        <h3>Projeto 3</h3>
-        <p>Plataforma de gerenciamento financeiro integrada com ERP.</p>
-      </div>
     </div>
   </section>
   <section class="section" id="contact">
@@ -305,7 +292,7 @@
     <p style="text-align: center;">Você pode me encontrar nestes canais:</p>
     <div class="contact-links">
         <div class="contact-link">
-            <a href="https://www.linkedin.com/in/rebeca-santos-/" target="_blank">
+            <a href="https://www.linkedin.com/in/rebeca-santos-/" target="_blank" aria-label="Visite meu perfil no LinkedIn">
                 <button>LinkedIn</button>
             </a>
         </div>
@@ -320,7 +307,7 @@
             </a>
         </div>
     </div>
-</section>
+  </section>
   <footer>
     <p>© 2024 Rebeca Lima - Todos os direitos reservados.</p>
   </footer>
